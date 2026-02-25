@@ -1,9 +1,15 @@
 import React from 'react'
+import {Routes , Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Auth from './pages/Auth'
 
 const App = () => {
   return (
     <>
-      <h1> This is the app.jsx file </h1>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/auth' element={<Auth/>}></Route>
+    </Routes>
     </>
   )
 }
